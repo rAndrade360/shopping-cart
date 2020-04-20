@@ -1,17 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './styles.css';
-// import { Container } from './styles';
-import {useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
+import { removeMessage } from '../../store/ducks/layout';
 
-export default function Message() {
-  const isShow = useSelector(state=>state.message.showMessage);
+export default function Message({message}) {
+  const dispatch = useDispatch();
+   
+  useEffect(()=>{
+    setTimeout( ()=>( dispatch(removeMessage(message))) , 2500)
+}, [message, dispatch])
   return (
-    <>
-    {isShow?
     <div className="message">
-        <p>Cadastrado com sucesso!</p>
+        <p>{message}</p>
     </div>
-  :null}
-    </>
   );
 }

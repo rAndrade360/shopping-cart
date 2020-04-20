@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import Card from '../../components/Card';
+import {addMessage} from '../../store/ducks/layout';
 
 import './styles.css'
 import { getAllCars } from '../../store/fetchActions';
@@ -15,6 +16,7 @@ export default function Main() {
 
   function addItemCart(car){
     dispatch(addItem(car))
+    dispatch(addMessage(`${car.name} adicionado com sucesso ao carrinho!`))
   }
  
   return (

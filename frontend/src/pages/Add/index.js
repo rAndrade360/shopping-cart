@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {showMessage, hideMessage} from '../../store/ducks/layout';
+import {addMessage} from '../../store/ducks/layout';
 import './styles.css';
 import {useDispatch} from 'react-redux';
 import { addCarFetch } from '../../store/fetchActions';
@@ -17,10 +17,7 @@ export default function Add() {
    dispatch(addCarFetch(form))
 
    setForm({name:'', url:''})
-   dispatch(showMessage());
-   setTimeout(()=>(
-     dispatch(hideMessage())
-   ), 2500);
+   dispatch(addMessage(`${form.name} adicionado com sucesso!`));
   }
   return (
     <> 

@@ -1,0 +1,21 @@
+.user{
+    text-align: center;
+
+}
+
+.user h2{
+    color: #444;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.user button{
+    border: none;
+    background-color: rgb(14, 145, 197);
+    width: 100%;
+    padding: 15px;
+    color: #FFF;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
