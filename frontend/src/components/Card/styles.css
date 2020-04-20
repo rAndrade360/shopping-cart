@@ -1,0 +1,38 @@
+.card{
+    max-width: 200px;
+    background-color: #FFF;
+    margin: 20px;
+    border-radius: 7px;
+
+}
+
+.card img{
+    max-width: 100%;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.bottom button{
+    border: 0;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.remove{
+    background-color: #ff3333;
+}
+.remove:hover{
+    background-color: #ff6666;
+}
+.add{
+    background-color: rgb(14, 145, 197);
+}
+.add:hover{
+    background-color: rgb(9, 168, 231);
+}

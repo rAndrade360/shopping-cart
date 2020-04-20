@@ -1,0 +1,36 @@
+.login{
+    width: 100%;
+    background-color: rgb(14, 145, 197);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+}
+
+.login nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login a{
+    margin-left: 20px;
+}
+
+a{
+    color: #FFF;
+}
+
+li{
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menu li{
+    margin: 10px;
+    padding: 10px;
+}

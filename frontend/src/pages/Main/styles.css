@@ -1,0 +1,8 @@
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+}
